@@ -6,6 +6,8 @@
 $ pnpm install
 ```
 
+- Create a database in Postgres name `hello`
+
 - Create a `.env` file in root folder
 
 ```
@@ -32,7 +34,7 @@ $ pnpm run start:prod
 
 ## Test `/hello` endpoint
 
-- First, hit `/hello/pre-populate` endpoint to prepopulate the `hello` database with following hellos:
+- First, hit `localhost:3000/hello/pre-populate` endpoint to prepopulate the `hello` database with following hellos:
 
 ```javascript
 [
@@ -59,4 +61,4 @@ $ pnpm run start:prod
 ];
 ```
 
-- Hit `/hello` endpoint to GET all hellos
+- Hit `localhost:3000/hello` endpoint to GET all hellos
